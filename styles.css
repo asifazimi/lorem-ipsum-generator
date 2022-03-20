@@ -1,0 +1,114 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root {
+  --primary-color: #1a6aa2;
+  --secondary-color: hsl(210, 22%, 49%);
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --text-color: #063251;
+  --bg-color: #f1f5f8;
+  --box-radius: 7px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--ff-secondary);
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* main */
+.lorem {
+  width: 91vw;
+  max-width: 40rem;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.lorem > h1 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.lorem-ipsum {
+  margin-top: 1.5rem;
+  max-width: 90vw;
+  margin-bottom: 1.5rem;
+}
+
+.lorem-ipsum > input {
+  margin-left: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+label {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+input#number {
+  width: 65px;
+  border: transparent;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding: 0 7px;
+}
+
+input#submit {
+  width: 115px;
+  height: 34px;
+  border-radius: 8px;
+  border: transparent;
+  background: #023e8a;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+input#submit:hover {
+  background: #03045e;
+}
+
+.result {
+  margin-top: 2rem;
+  color: hsl(210, 22%, 49%);
+  font-size: 0.88rem;
+}
+
+@media screen and (min-width: 992px) {
+  .lorem {
+    width: 50vw;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+
+  .lorem h1 {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 1.3rem;
+  }
+}
